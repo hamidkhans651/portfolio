@@ -16,9 +16,9 @@ const Hero = () => {
         typedScript.onload = () => {
             // Initialize Typed.js after the script is loaded
             new Typed('.typing', {
-                strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
-                typeSpeed: 100,
-                backSpeed: 60,
+                strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,'],
+                typeSpeed: 80,
+                backSpeed: 50,
                 loop: true,
             });
         };
@@ -37,10 +37,10 @@ const Hero = () => {
                 />
             </Head>
             <div>
-                <div className="w-full h-screen bg-gray-200 dark:bg-gray-800">
+                <div className="w-full h-screen bg-gray-200 dark:bg-gray-800 p-">
                     <header className="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
                         <div className="flex-1 flex justify-between items-center">
-                            <a href="#" className="text-3xl font-semibold font-serif text-green-500">$@(\/)(\/)Y</a>
+                            <a href="#" className="text-3xl font-semibold font-serif text-green-500"></a>
                         </div>
 
                         <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
@@ -64,19 +64,18 @@ const Hero = () => {
                             </nav>
                         </div>
                     </header>
-                    <div className="w-full h-screen relative">
+                    <div className="w-full h-screen relative p-10 ">
                         <div className="w-full h-full xl:px-16 xs:px-8 flex gap-4 justify-center items-center">
                             <div className="w-full">
-                                <h4 className="sm:text-2xl xs:text-md text-gray-600 dark:text-gray-300">Hello, My name is
-                                    <span className="text-rose-400 sm:text-2xl xs:text-xl font-semibold font-serif">Samuel Abera</span>
+                                <h4 className="sm:text-2xl xs:text-md text-gray-600 dark:text-gray-300">Hello, My name is 
+                                    <span className="text-rose-400 ml-2 sm:text-2xl xs:text-xl font-semibold font-serif">Muhammad hamid</span>
                                 </h4>
-                                <h1 className="mt-4 sm:text-4xl xs:text-3xl dark:text-white">I'm
-                                    <span className="typing libre-baskerville-bold text-green-600"></span>
+                                <h1 className="mt-4  sm:text-4xl xs:text-3xl dark:text-white ">I'm 
+                                    <span className="typing ml-2 libre-baskerville-bold text-green-600"></span>
                                 </h1>
-
                                 <p className="mt-4 sm:text-lg xs:text-md capitalize dark:text-gray-200">Experienced full-stack developer
-                                    with 4+
-                                    years of expertise in Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>
+                                    with 1+
+                                    year of expertise in Jamestack, Mern-stack, and some Devops experience.</p>
                                 <button className="p-2 px-6 mt-6 bg-rose-500 text-white rounded-full">Hire Me</button>
                             </div>
 
