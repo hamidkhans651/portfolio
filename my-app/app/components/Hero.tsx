@@ -1,6 +1,5 @@
 'use client'
 
-
 import React from 'react'
 import Head from 'next/head';
 import { useEffect } from 'react';
@@ -28,14 +27,7 @@ const Hero = () => {
     return (
 
         <>
-            <Head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-                    rel="stylesheet"
-                />
-            </Head>
+
             <div>
                 <div className="w-full h-screen bg-gray-200 dark:bg-gray-800 p-">
                     <header className="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
@@ -67,10 +59,11 @@ const Hero = () => {
                     <div className="w-full h-screen relative p-10 ">
                         <div className="w-full h-full xl:px-16 xs:px-8 flex gap-4 justify-center items-center">
                             <div className="w-full">
-                                <h4 className="sm:text-2xl xs:text-md text-gray-600 dark:text-gray-300">Hello, My name is 
+                                <h4 className="sm:text-2xl xs:text-md text-gray-600 dark:text-gray-300">Hello, My name is
                                     <span className="text-rose-400 ml-2 sm:text-2xl xs:text-xl font-semibold font-serif">Muhammad hamid</span>
                                 </h4>
-                                <h1 className="mt-4  sm:text-4xl xs:text-3xl dark:text-white ">I'm 
+                                <h1 className="mt-4  sm:text-4xl xs:text-3xl dark:text-white">
+                                I&apos;m
                                     <span className="typing ml-2 libre-baskerville-bold text-green-600"></span>
                                 </h1>
                                 <p className="mt-4 sm:text-lg xs:text-md capitalize dark:text-gray-200">Experienced full-stack developer
@@ -80,7 +73,6 @@ const Hero = () => {
                             </div>
 
                             <div className="xl:max-w-[30%] md:max-w-[30%] h-fit hidden md:block ">
-                                <img className="rounded-sm rounded-br-[5rem] rounded-tl-[5rem]" src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg" alt="My Pic" />
                             </div>
                         </div>
                     </div>
