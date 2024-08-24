@@ -17,6 +17,7 @@
 }
 
 body {
+  font-family: "Saans TRIAL";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +25,26 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+
 }
+
+
+
+
+
+
+/* /styles/fonts.css */
+
+
+/* font-family: 'inter_Inter-san'; */
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  h1 sup{
+   font-size: 4vw; 
   }
 }

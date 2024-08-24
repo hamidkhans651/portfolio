@@ -1,15 +1,14 @@
-import Image from "next/image";
-import Hero from "./components/Hero";
+import React from 'react'
+import Link from 'next/link'
+import Loader from "./components/Loader"
 
 
-
-
-export default function Home() {
+const home = () => {
   return (
- <div>
-
-  <Hero/>
- </div>
-
-  );
+    <div>
+      <Loader/>
+    </div>
+  )
 }
+
+export default home
