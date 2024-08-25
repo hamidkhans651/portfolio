@@ -17,6 +17,7 @@
 }
 
 body {
+ 
   font-family: "Saans TRIAL";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -29,7 +30,11 @@ body {
 
 }
 
-
+#master {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
 
 /* .spacer {
   height: 800px;
