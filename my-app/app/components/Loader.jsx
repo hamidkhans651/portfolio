@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import { gsap, CSSPlugin, Expo } from "gsap";
 import { createGlobalStyle } from 'styled-components';
+import Hero from "./Hero";
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -88,16 +89,7 @@ function Loader() {
       </Loading>
 
       <Content className="content ">
-        <Link href="/Menu"> {/* Set the href prop to the root URL */}
-          <a className="menu">MENU</a> {/* Wrap the clickable text in an <a> tag */}
-        </Link>
-        <div>
-        <h1 className="main_tagline">From Concept to Code <p>M.HAMID</p></h1>
-        
-
-        </div>
-     
-
+     <Hero/>
       </Content>
 
     </AppContainer>

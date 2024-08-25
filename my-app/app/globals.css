@@ -31,8 +31,20 @@ body {
 
 
 
+/* .spacer {
+  height: 800px;
+}
 
-
+.marquee {
+  position: relative;
+  background:black ;
+  color: #eee;
+  padding: 30px 0;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  overflow: hidden;
+} */
 
 /* /styles/fonts.css */
 
@@ -41,6 +53,9 @@ body {
 
 
 @layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
   .text-balance {
     text-wrap: balance;
   }

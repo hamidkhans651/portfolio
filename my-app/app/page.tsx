@@ -1,13 +1,25 @@
 import React from 'react'
 import Link from 'next/link'
 import Loader from "./components/Loader"
+import Projects from './components/Projects'
 
 
 const home = () => {
   return (
-    <div>
-      <Loader/>
-    </div>
+
+    <main>
+      <div>
+        <Loader />
+
+        <div className=''>
+          <Projects />
+
+        </div>
+      </div>
+
+    </main>
+
+
   )
 }
 
