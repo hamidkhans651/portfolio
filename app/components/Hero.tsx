@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import Master from './Master';
 
 const Hero = () => {
   return (
@@ -18,7 +19,9 @@ const Hero = () => {
       </div>
       {/* Main Content Centering */}
 
-      
+
+<Master/>
+{/*       
       <div className="bg-white text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="hero min-h-screen flex items-center justify-center">
@@ -32,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
 
     </div>
