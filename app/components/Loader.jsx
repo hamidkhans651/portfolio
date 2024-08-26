@@ -114,11 +114,13 @@ const StyledText = styled.h1`
 `;
 
 const AppContainer = styled.div`
-    width: 100vw;
-    height: 90vh;
+    width: 100vw; // Full viewport width
+    min-height: 100vh; // Minimum height of 100% of the viewport height
     color: #000000;
-    position: relative;
-  `;
+    position: relative; // Ensures it remains in document flow
+    overflow: auto; // Allows for scrolling
+`;
+
 const Loading = styled.div`
     height: 100%;
     width: 100%;
@@ -168,7 +170,7 @@ const Content = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow: auto;
     color: #black;
 
 
