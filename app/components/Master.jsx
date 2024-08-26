@@ -16,13 +16,16 @@ const Master = () => {
 
 
     return (
-        
-        <Canvas  flat   camera={{ fov: 35 }}>
-            <OrbitControls />
+
+        <Canvas flat camera={{ fov: 35 }}>
+            <OrbitControls enableZoom={false} enableRotate={true} enablePan={false} />
             <ambientLight />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <pointLight position={[-10, -10, -10]} />
             <Cube />
+
             <EffectComposer>
-                <Bloom   
+                <Bloom
                     mipmapBlur
                     intensity={7.0} // The bloom intensity.
                     luminanceThreshold={0} // luminance threshold. Raise this value to mask out darker elements in the scene.
