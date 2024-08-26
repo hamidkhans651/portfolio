@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Loader from "./components/Loader"
 
 import Master from './components/Master'
+import Projects from './components/Projects'
 
 
 const home = () => {
@@ -10,12 +11,12 @@ const home = () => {
 
     <main>
       <div>
-        <div className='' id='master'>
-
-        </div>
         <Loader />
       </div>
-
+      
+      <section id='marquee'>
+        <Projects />
+      </section>
     </main>
 
 
