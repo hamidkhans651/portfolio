@@ -25,7 +25,7 @@ const home = () => {
       <div className=''>
       </div>
 
-      <div className='master-div bg-green-800'>
+      <div className='master-div bg-green-600'>
         <Master />
 
 
