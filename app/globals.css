@@ -36,12 +36,11 @@ body {
 
 }
 
-
 .scroll-button {
   font-size: 1rem;
-  position: fixed;
+
   font-size: xx-large;
-  bottom: 2rem;
+  bottom: 20rem;
   right: 2rem;
   display: inline-flex;
   align-items: center;

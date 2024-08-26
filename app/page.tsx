@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Loader from "./components/Loader"
 import Master from './components/Master'
 import Projects from './components/Projects'
-import Button from './components/Button'
 import Hero from './components/Hero'
 
 
@@ -12,7 +11,7 @@ const home = () => {
   return (
 
     <main className=''>
-
+      
       <div id="landingpage" className=''>
         <Loader />
       </div>
