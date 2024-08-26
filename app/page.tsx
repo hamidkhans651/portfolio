@@ -12,7 +12,7 @@ const home = () => {
   return (
 
     <main className=''>
-      <Button />
+    
       <div id="landingpage" className=''>
         <Loader />
       </div>

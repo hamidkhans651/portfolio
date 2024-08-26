@@ -18,7 +18,7 @@ const Master = () => {
     return (
 
         <Canvas flat camera={{ fov: 35 }}>
-            <OrbitControls enableZoom={false} enableRotate={true} enablePan={false} />
+            <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} />
             <ambientLight />
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
             <pointLight position={[-10, -10, -10]} />

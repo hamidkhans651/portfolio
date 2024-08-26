@@ -92,7 +92,7 @@ function Loader() {
       </Loading>
 
       <Content className="content ">
-       <Button/>
+   
         <Hero />
         
     
