@@ -4,12 +4,12 @@
 import Link from "next/link";
 import React, { useState, useEffect, use } from "react";
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
+
 import { gsap, CSSPlugin, Expo } from "gsap";
 import { createGlobalStyle } from 'styled-components';
 import Hero from "./Hero";
-import Button from "./Button";
-import Master from "./Master";
+
+
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -31,6 +31,7 @@ gsap.registerPlugin(CSSPlugin);
 
 function Loader() {
   const [counter, setCounter] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
 
   useEffect(() => {
@@ -49,6 +50,7 @@ function Loader() {
     const t1 = gsap.timeline({
       onComplete: () => {
         console.log("completed");
+        setIsVisible(false);
 
       },
     });
@@ -76,9 +78,11 @@ function Loader() {
       });
   };
 
+  if (!isVisible) return null;
+
   return (
     <AppContainer className="" >
-  
+
       <Loading>
         <Follow className="follow"></Follow>
         <ProgressBar
@@ -92,10 +96,7 @@ function Loader() {
       </Loading>
 
       <Content className="content ">
-   
-        <Hero />
-        
-    
+
       </Content>
 
     </AppContainer>
@@ -115,7 +116,7 @@ const StyledText = styled.h1`
 
 const AppContainer = styled.div`
     width: 100vw; // Full viewport width
-    min-height: 100vh; // Minimum height of 100% of the viewport height
+    height: 100vh; // Minimum height of 100% of the viewport height
     color: #000000;
     position: relative; // Ensures it remains in document flow
     overflow: auto; // Allows for scrolling
@@ -158,7 +159,7 @@ const Count = styled.p`
   `;
 
 const Content = styled.div`
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: absolute;
     left: 0;

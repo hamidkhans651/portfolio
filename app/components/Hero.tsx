@@ -4,10 +4,8 @@ import Master from './Master';
 import Image from 'next/image';
 
 
-
 const Hero = () => {
   return (
-
     <div className='w-full h-full flex flex-col'>
       {/* Navigation Section */}
       <div className="flex justify-between items-center p-4">
@@ -19,14 +17,11 @@ const Hero = () => {
           className=" text-black py-3  px-2 rounded-full hover:bg-gray-200 transition duration-200"
         > MENU
         </Link>
+
+ 
       </div>
       {/* Main Content Centering */}
-
-      <Master />
-
-
-
-
+    
     </div>
 
 

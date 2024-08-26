@@ -12,11 +12,26 @@ const home = () => {
   return (
 
     <main className=''>
-    
+
       <div id="landingpage" className=''>
         <Loader />
       </div>
-      <section id='marquee' className='' >
+
+      <div>
+        <Hero />
+      </div>
+
+
+      <div className=''>
+      </div>
+
+      <div className='master-div bg-green-800'>
+        <Master />
+
+
+      </div>
+
+      <section id='Projects' className='' >
         <Projects />
       </section>
     </main>

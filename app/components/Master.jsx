@@ -15,6 +15,7 @@ extend({ MeshStandardMaterial });
 const Master = () => {
 
 
+
     return (
 
         <Canvas flat camera={{ fov: 35 }}>
