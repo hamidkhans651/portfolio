@@ -6,9 +6,7 @@ import * as THREE from 'three';
 import { useTexture } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
-
 const Cube = () => {
-
     let tex = useTexture("cube.png");
     let cyl = useRef(null);
     useFrame((state, delta) => {

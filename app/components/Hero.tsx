@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link';
 import Master from './Master';
+import Image from 'next/image';
+
+
 
 const Hero = () => {
   return (
@@ -19,23 +22,9 @@ const Hero = () => {
       </div>
       {/* Main Content Centering */}
 
+      <Master />
 
-<Master/>
-{/*       
-      <div className="bg-white text-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="hero min-h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
-              Hi, I&apos;m a <span className="text-[#f48049]">Fullstack Engineer</span>
-            </h1>
-            <p className="mt-6 text-xl sm:text-2xl">
-              Specializing in modern web applications with over 1 year of professional experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> */}
+
 
 
     </div>

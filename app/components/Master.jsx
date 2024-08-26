@@ -7,7 +7,6 @@ import { OrbitControls } from '@react-three/drei';
 import Cube from '../components/Cube'
 import { Bloom, EffectComposer, ToneMapping } from '@react-three/postprocessing'
 
-
 // Importing MeshStandardMaterial from THREE
 import { MeshStandardMaterial } from 'three';
 
@@ -15,7 +14,9 @@ import { MeshStandardMaterial } from 'three';
 extend({ MeshStandardMaterial });
 const Master = () => {
 
+
     return (
+        
         <Canvas  flat   camera={{ fov: 35 }}>
             <OrbitControls />
             <ambientLight />
@@ -26,15 +27,9 @@ const Master = () => {
                     intensity={7.0} // The bloom intensity.
                     luminanceThreshold={0} // luminance threshold. Raise this value to mask out darker elements in the scene.
                     luminanceSmoothing={0} // smoothness of the luminance threshold. Range is [0, 1]
-
                 />
                 {/* <ToneMapping adaptive/> */}
-
-
             </EffectComposer>
-
-
-
         </Canvas>
     );
 };

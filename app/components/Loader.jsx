@@ -8,6 +8,8 @@ import { useRouter } from 'next/router';
 import { gsap, CSSPlugin, Expo } from "gsap";
 import { createGlobalStyle } from 'styled-components';
 import Hero from "./Hero";
+import Button from "./Button";
+import Master from "./Master";
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -76,6 +78,7 @@ function Loader() {
 
   return (
     <AppContainer className="" >
+  
       <Loading>
         <Follow className="follow"></Follow>
         <ProgressBar
@@ -89,7 +92,10 @@ function Loader() {
       </Loading>
 
       <Content className="content ">
-     <Hero/>
+       <Button/>
+        <Hero />
+        
+    
       </Content>
 
     </AppContainer>
@@ -109,7 +115,7 @@ const StyledText = styled.h1`
 
 const AppContainer = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     color: #000000;
     position: relative;
   `;
@@ -155,7 +161,7 @@ const Content = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    background-color:white;
+    background-color:green;
     padding: auto;
     z-index: 3;
     display: flex;
@@ -164,6 +170,7 @@ const Content = styled.div`
     flex-direction: column;
     overflow: hidden;
     color: #black;
+
 
     .menu {
   color: black;

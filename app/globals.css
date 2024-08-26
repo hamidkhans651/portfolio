@@ -17,25 +17,33 @@
 }
 
 body {
- 
   font-family: "Saans TRIAL";
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-
-
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 #master {
   width: 100%;
   height: 100%;
+
   /* position:fixed; */
 
 }
+
+.scroll-button {
+  font-size: 1rem;
+  position: fixed;
+  font-size: xx-large;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+
+
+}
+
 
 /* .spacer {
   height: 800px;
@@ -62,10 +70,12 @@ body {
   .paused {
     animation-play-state: paused;
   }
+
   .text-balance {
     text-wrap: balance;
   }
-  h1 sup{
-   font-size: 4vw; 
+
+  h1 sup {
+    font-size: 4vw;
   }
 }
