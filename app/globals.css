@@ -54,6 +54,22 @@ body {
   grid-column: 2; /* Second column */
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .page-container {
+      grid-template-columns: 1fr; /* Only one column */
+  }
+
+  .left-section {
+      display: none; /* Hide the left section */
+  }
+
+  .right-section {
+      grid-column: 1; /* Expand the right section to full width */
+      grid-row: 1;
+  }
+}
+
 
 
 
