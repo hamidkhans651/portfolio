@@ -1,8 +1,6 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
-
 import { FaArrowCircleDown } from "react-icons/fa";
 
 
@@ -17,8 +15,9 @@ const Button = () => {
 
   return (
     <div>
-      <button className='scroll-button ' onClick={scrollToBottom}>
-        <FaArrowCircleDown />
+      <button className='scroll-button border-2 rounded-full py-6 px-2 ' onClick={scrollToBottom}>
+        MY WORK
+
       </button>
     </div>
   )

@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="logo">
           <a className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold'>M.HAMID</a>
         </div>
-        <div className='flex'>Scroll__<Button />__Down
+        <div className='flex'>
         </div>
 
         <Link
