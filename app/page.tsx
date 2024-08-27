@@ -5,7 +5,6 @@ import Master from './components/Master'
 import Projects from './components/Projects'
 import Hero from './components/Hero'
 import Bottom from './components/landingpages/Bottom'
-import { Timeline } from './components/timline(acernity)/timline'
 import Future from './components/Future'
 import Skill from './components/Skill'
 import Footer from './components/Footer'
@@ -42,12 +41,12 @@ const home = () => {
             <Bottom />
           </div>
         </div>
-        <Future/>
-        <Skill/>
-        <Footer/>
-        
-      </div>
 
+
+      </div>
+      <Future />
+      <Skill />
+      <Footer />
     </main>
 
 
