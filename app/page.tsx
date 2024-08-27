@@ -11,7 +11,7 @@ const home = () => {
   return (
 
     <main className=''>
-      
+
       <div id="landingpage" className=''>
         <Loader />
       </div>
@@ -24,15 +24,21 @@ const home = () => {
       <div className=''>
       </div>
 
-      <div className='master-div bg-green-600'>
-        <Master />
+      <div className='page-container bg-white'>
+        <div id='Projects' style={{ flex: 1 }}>
+          <Projects />
+        </div>
 
-
+        <div className='right-section'>
+          <div className='master-top'>
+            <Master />
+          </div>
+          <div className='master-bottom'>
+            <Master /> {/* Assuming you want another instance or a different component here */}
+          </div>
+        </div>
       </div>
 
-      <section id='Projects' className='' >
-        <Projects />
-      </section>
     </main>
 
 

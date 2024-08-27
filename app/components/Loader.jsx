@@ -96,7 +96,7 @@ function Loader() {
       </Loading>
 
       <Content className="content ">
-
+   
       </Content>
 
     </AppContainer>
