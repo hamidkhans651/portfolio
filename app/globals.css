@@ -22,6 +22,25 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+@font-face {
+        font-family: 'UniversalSans-500';
+        src: url('/path-to-font/UniversalSans-500.woff2') format('woff2'),
+             url('/path-to-font/UniversalSans-500.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+}
+
+.stunning-paragraph {
+  font-family: 'UniversalSans-500', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(0, 0, 0); /* black */
+  font-size: 22px;
+  line-height: 25px;
+  text-align: justify; /* This will ensure the text is spread evenly and looks 'stunning' */
 }
 
 

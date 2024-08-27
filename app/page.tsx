@@ -4,10 +4,10 @@ import Loader from "./components/Loader"
 import Master from './components/Master'
 import Projects from './components/Projects'
 import Hero from './components/Hero'
-import Bottom from './components/landingpages/Bottom'
 import Future from './components/Future'
 import Skill from './components/Skill'
 import Footer from './components/Footer'
+import Mid from './components/Mid'
 
 
 
@@ -28,9 +28,9 @@ const home = () => {
       <div className=''>
       </div>
 
-      <div className='page-container bg-white'>
+      <div className=' bg-white'>
         <div id='Projects' style={{ flex: 1 }}>
-          <Projects />
+          {/* <Projects /> */}
         </div>
 
         <div className='right-section'>
@@ -38,11 +38,9 @@ const home = () => {
             <Master />
           </div>
           <div className='master-bottom'>
-            <Bottom />
+            <Mid />
           </div>
         </div>
-
-
       </div>
       <Future />
       <Skill />
