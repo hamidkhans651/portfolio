@@ -8,6 +8,7 @@ import Future from './components/Future'
 import Skill from './components/Skill'
 import Footer from './components/Footer'
 import Mid from './components/Mid'
+import { TimelineDemo } from './components/TimelineDemo'
 
 
 
@@ -42,6 +43,7 @@ const home = () => {
           </div>
         </div>
       </div>
+      <TimelineDemo />
       <Future />
       <Skill />
       <Footer />
