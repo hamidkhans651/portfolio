@@ -9,6 +9,8 @@ import Skill from './components/Skill'
 import Footer from './components/Footer'
 import Mid from './components/Mid'
 import { TimelineDemo } from './components/TimelineDemo'
+import Menu from './Menu/Menu'
+import Loading from './components/Loading'
 
 
 
@@ -16,17 +18,9 @@ const home = () => {
   return (
 
     <main className=''>
-
-      <div id="landingpage" className=''>
-        <Loader />
-      </div>
-
-      <div>
-        <Hero />
-      </div>
-
-
-      <div className=''>
+   
+      {/* <Menu /> */}
+      <div className=''> <Loading/>
       </div>
 
       <div className=' bg-white'>

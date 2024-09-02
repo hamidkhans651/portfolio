@@ -2,77 +2,80 @@
 
 import Link from "next/link"
 import React, { useState, useEffect, useRef } from 'react'
+import "./menu.css"
 // import { gsap } from "gsap";
 // import { useGSAP } from "@gsap/react";
 // import { tree } from "next/dist/build/templates/app-page";
 
 const menuLinks = [
   { path: "/", label: "Home" },
-  { path: "/Work", label: "Work" },
-  { path: "/About", label: "About" },
-  { path: "/Contact", label: "Contact" },
+  { path: "/work", label: "Work" },
+  { path: "/about", label: "About" },
+  { path: "/contact", label: "Contact" },
 
 ];
 
 const Menu = () => {
-  const container = useRef < HTMLDivElement > (null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const tl = useRef();
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  // useGSAP(
-  //   () => {
-  //     gsap.set(".menu-link-items-holder", { y: 75 });
-
-  //     tl.current = gsap
-  //       .timeline({ paused: true })
-  //       .to(".menu-overlay", {
-  //         duration: 1.25,
-  //         clipPath: "polygon(0% 0%, 100% 0%,100% 0%, 0% 0%)",
-  //       })
-  //       .to(".menu-link-item-holder", {
-  //         y: 8,
-  //         duration: 1,
-  //         stagger: 0.1,
-  //         ease: "power4.inOut",
-  //         delay: -0.75,
-  //       });
-  //   },
-  //   { scope: container }
-
-  // );
-
-  // useEffect(() => {
-  //   if (isMenuOpen) {
-  //     tl.current.play()
-  //   } else {
-  //     tl.current.reverse();
-  //   }
-  // })
-
-
+    const container = useRef < HTMLDivElement > (null);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+    const tl = useRef();
+  
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+  
+    // useGSAP(
+    //   () => {
+    //     gsap.set(".menu-link-items-holder", { y: 75 });
+  
+    //     tl.current = gsap
+    //       .timeline({ paused: true })
+    //       .to(".menu-overlay", {
+    //         duration: 1.25,
+    //         clipPath: "polygon(0% 0%, 100% 0%,100% 0%, 0% 0%)",
+    //       })
+    //       .to(".menu-link-item-holder", {
+    //         y: 8,
+    //         duration: 1,
+    //         stagger: 0.1,
+    //         ease: "power4.inOut",
+    //         delay: -0.75,
+    //       });
+    //   },
+    //   { scope: container }
+  
+    // );
+  
+    // useEffect(() => {
+    //   if (isMenuOpen) {
+    //     tl.current.play()
+    //   } else {
+    //     tl.current.reverse();
+    //   }
+    // })
+  
+  
   return (
     <div className='menu-container' ref={container} >
       <div className="menu-bar">
-        <div className="menu-logo">
-          <Link href="/"></Link>
-        </div>
+      <div className="menu-logo">
+      <Link href="/"></Link>
+      </div>
+        
         <div className="menu-open" onClick={toggleMenu} >
-          <p> </p>
+        
         </div>
       </div>
 
       <div className="menu-overlay">
         <div className="menu-overlay-bar">
           <div className="menu-logo">
-            <Link href="/">Menu</Link>
+            <Link href="/">HAMID</Link>
           </div>
           <div className="menu-close" onClick={toggleMenu}>
-            <p>CLose</p>
+            <p>CLose </p>
           </div>
         </div>
         <div className="menu-close-icon">

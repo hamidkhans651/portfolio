@@ -19,9 +19,9 @@
 body {
   font-family: "Saans TRIAL";
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: white;
+
+}
 
 @font-face {
         font-family: 'UniversalSans-500';
@@ -31,7 +31,71 @@ body {
         font-style: normal;
     }
     
+a, 
+p {
+  color: #000;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+
 }
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background:url("./nav.jpg") no-repeat 50% 50%;
+  
+}
+
+.page-content.hero {
+  background: url("./nav.jpg") ;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 5vw;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: #fff;
+
+}
+
+
+h1 sup {
+  position: relative;
+  top: -20px;
+  left: 10px;
+  font-size: 1.5wv;
+  letter-spacing: 0;
+
+
+
+}
+
+@media(max-width:900px){
+  .page-content h1 {
+    font-size: 10vw;
+  }
+  h1 sup {
+    font-size: 4wbv;
+  }
+}
+
+/* .loader{
+
+  position: fixed;
+  overflow-hidden h-screen
+} */
+
+ 
+ 
 
 .stunning-paragraph {
   font-family: 'UniversalSans-500', Helvetica, Arial, sans-serif;
@@ -71,8 +135,6 @@ body {
   color: white;
 
 }
-
-
 
 .master-div {
   height: 100vh;

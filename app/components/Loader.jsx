@@ -11,6 +11,7 @@ import Hero from "./Hero";
 
 
 
+
 export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Inter-Italic';

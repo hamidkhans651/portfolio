@@ -5,7 +5,7 @@ import Link from 'next/link'; // Import Link from Next.js
 
 const Page = () => {
   return (
-    <div className=''>
+    <div className='page-content'>
       <h1>Our Work</h1>
       <h2>
         <Link href="/"> {/* Set the href prop to the root URL */}

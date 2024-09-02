@@ -4,6 +4,9 @@ import Image from 'next/image';
 import Button from './Button';
 
 
+
+
+
 const Hero = () => {
   return (
     <div className='w-full h-full flex '>
@@ -17,7 +20,10 @@ const Hero = () => {
         <Link
           href="/Menu"
           className=" text-black py-3 px-2 rounded-full hover:bg-gray-200 transition duration-200"> 
-          <button>MENU</button>
+       <p className='text-white'>
+
+
+       </p>
         </Link>
       </div>
 
