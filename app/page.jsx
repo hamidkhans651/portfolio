@@ -47,20 +47,18 @@ const Section1 = ({ scrollYProgress }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, -5])
   return (
 
-    <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-[#C72626] text-[3.5vw] flex flex-col items-center justify-center text-white pb-[10vh]">
+    <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-white text-[3.5vw]  text-white ">
       <p>Scroll Perspective</p>
-      <div className="flex gap-4">
-        <p>Section</p>
-        <div className="relative w-[12.5vw]">
-          <Master />
+      <div className="">
+
+        <div className="">
+          <Mid />
         </div>
-        <p>Transition</p>
+      
       </div>
     </motion.div>
   )
 }
-
-<Mid />
 
 const Section2 = ({ scrollYProgress }) => {
 
@@ -68,7 +66,7 @@ const Section2 = ({ scrollYProgress }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0])
 
   return (
-    
+
     <motion.div style={{ scale, rotate }} className="relative h-screen">
       <TimelineDemo />
     </motion.div>
