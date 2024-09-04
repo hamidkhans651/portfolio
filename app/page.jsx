@@ -48,14 +48,13 @@ const Section1 = ({ scrollYProgress }) => {
   return (
 
     <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-white text-[3.5vw]  text-white ">
-      <p>Scroll Perspective</p>
+
       <div className="">
 
         <div className="">
           <Mid />
         </div>
-      
-      </div>
+      </div> 
     </motion.div>
   )
 }
