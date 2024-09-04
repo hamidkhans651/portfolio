@@ -7,7 +7,6 @@ import styled from 'styled-components';
 
 import { gsap, CSSPlugin, Expo } from "gsap";
 import { createGlobalStyle } from 'styled-components';
-import Hero from "./Hero";
 
 
 
