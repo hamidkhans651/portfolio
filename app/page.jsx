@@ -1,13 +1,11 @@
 'use client'
 
 
-import { useEffect, useRef } from "react";
-import Mid from './components/Mid'
+import { useEffect, useState, useRef } from "react";
 import { TimelineDemo } from './acenity.UI/UI/TimelineDemo'
 import { useScroll, useTransform, motion } from "framer-motion";
 import Lenis from 'lenis';
-import StickyCursor from '../app/components/stickyCursor'
-import Header from '../app/components/header'
+import LandingPage from '../app/LandingPage'
 
 export default function Home() {
 
@@ -45,10 +43,11 @@ const Section1 = ({ scrollYProgress }) => {
   const stickyElement = useRef(null);
   return (
 
-    <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-white text-[3.5vw]  text-white ">
-      <main >
-        <Header ref={stickyElement} />
-        <StickyCursor stickyElement={stickyElement} />
+    <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-white  text-white ">
+      <LandingPage />
+
+      <main className="lg:block md:block hidden sm:hidden xs:hidden">
+
       </main>
     </motion.div>
   )
@@ -72,6 +71,7 @@ const Section2 = ({ scrollYProgress }) => {
 
   )
 }
+
 
 
 
