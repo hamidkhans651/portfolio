@@ -3,15 +3,22 @@ import styles from './page.module.scss'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from './utils/useMousePosition';
+import Header from '../app/components/header';
+import Menu from '../app/components/menu';
+import VerticalPixelTransition from '../app/components/pixelTransition/vertical';
 
 export default function LandingPage() {
 
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
   const size = isHovered ? 400 : 40;
+  const [menuIsActive, setMenuIsActive] = useState(false);
 
   return (
     <main className={styles.main}>
+      <Header menuIsActive={menuIsActive} setMenuIsActive={setMenuIsActive} />
+      <Menu menuIsActive={menuIsActive} />
+      <VerticalPixelTransition menuIsActive={menuIsActive}/>
       <motion.div
         className={styles.mask}
         animate={{
