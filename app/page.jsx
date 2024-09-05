@@ -1,6 +1,5 @@
 'use client'
 
-
 import { useEffect, useState, useRef } from "react";
 import { TimelineDemo } from './acenity.UI/UI/TimelineDemo'
 import { useScroll, useTransform, motion } from "framer-motion";
