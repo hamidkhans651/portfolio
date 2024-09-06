@@ -5,6 +5,8 @@ import { TimelineDemo } from "./acenity.UI/UI/TimelineDemo";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Lenis from "lenis";
 import LandingPage from "../app/LandingPage";
+import Hero from "../app/HeroPage/Hero"
+
 
 export default function Home() {
   const container = useRef();
@@ -20,14 +22,16 @@ export default function Home() {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
   }, []);
 
   return (
-    <main ref={container} className="relative h-[200vh]">
+    <main >
+
       <Section1 scrollYProgress={scrollYProgress} />
       <Section2 scrollYProgress={scrollYProgress} />
+
+
     </main>
   );
 }
@@ -39,11 +43,10 @@ const Section1 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="sticky top-0 h-screen bg-white  text-white "
-    >
+      className="sticky top-0 h-screen bg-white  text-white ">
       <LandingPage />
-
-      <main className="lg:block md:block hidden sm:hidden xs:hidden"></main>
+      <main className="lg:block md:block hidden sm:hidden xs:hidden">
+      </main>
     </motion.div>
   );
 };
