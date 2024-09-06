@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import useMousePosition from "./utils/useMousePosition";
 import Header from "./components/MenuBar/header";
-import Menu from "../app/components/menu";
+import Menu from "../app/components/MenuBar/menu";
 import VerticalPixelTransition from "./components/MenuBar/pixelTransition/vertical";
 
 export default function LandingPage() {
