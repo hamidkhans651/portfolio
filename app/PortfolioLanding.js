@@ -9,7 +9,7 @@ import Description from '../components/Description';
 import SlidingImages from '../components/SlidingImages';
 import Contact from '../components/Contact';
 
-export default function Home() {
+export default function PortfolioLanding() {
 
   const [isLoading, setIsLoading] = useState(true);
 
