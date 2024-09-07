@@ -2,6 +2,7 @@ import LandingPage from "../app/LandingPage";
 import FooterComp from './components/Footer/Footer'
 import Skill from './components/Skill';
 import { TimelineDemo } from "./acenity.UI/UI/TimelineDemo";
+import Vignette from '../vignette/Vignette'
 
 
 
@@ -12,16 +13,17 @@ export default function Home() {
         < LandingPage />
       </div>
       <div>
-      <TimelineDemo />
+        <TimelineDemo />
       </div>
 
       <div id='Projects'>
         <Skill />
       </div>
+
+      <Vignette />
       <div id='Footer'>
         <FooterComp />
       </div>
-
     </main>
   );
 };
