@@ -17,7 +17,7 @@ export default function Index() {
 
     useEffect( () => {
       if(isActive) setIsActive(false)
-    }, [pathname])
+    }, [pathname, isActive])
 
     useLayoutEffect( () => {
         gsap.registerPlugin(ScrollTrigger)

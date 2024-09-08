@@ -28,7 +28,7 @@ export default function Home() {
       x: "-500px",
     });
     requestAnimationFrame(animate);
-  }, []);
+  }, [animate]);
 
   const animate = () => {
     if (xPercent.current < -100) {
