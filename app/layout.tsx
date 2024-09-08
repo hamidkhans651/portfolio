@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body className={inter.className}>
 
-        <Loading />
+  
 
         {children}
       </body>
