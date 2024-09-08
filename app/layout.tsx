@@ -1,8 +1,8 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import React, { ReactNode } from 'react';
-import Loading from './components/Loading';
-import Hero from './LandingPage';
+
+
 
 const inter = Inter({ subsets: ['latin'] });
 
