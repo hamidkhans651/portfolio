@@ -8,8 +8,8 @@ import Projects from '../components/Projects';
 import Description from '../components/Description';
 import SlidingImages from '../components/SlidingImages';
 import Contact from '../components/Contact';
-import Mid from './components/Mid';
-
+import Mid from './Mid';
+import Lenis from './Lenis'
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +37,7 @@ export default function Home() {
       <Landing />
       <Description />
       <Projects />
+      <Lenis/>
       {/* <SlidingImages /> */}
       {/* <Contact /> */}
       <Mid/>

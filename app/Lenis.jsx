@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import { TimelineDemo } from "./acenity.UI/UI/TimelineDemo";
+import { useEffect, useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Lenis from "lenis";
+import Mid from './Mid';
+
 
 export default function Margedlenis() {
     const container = useRef();
@@ -39,8 +40,9 @@ const Section1 = ({ scrollYProgress }) => {
         <motion.div
             style={{ scale, rotate }}
             className="sticky top-0 h-screen bg-white  text-white ">
-            <TimelineDemo />
+
             <main className="lg:block md:block hidden sm:hidden xs:hidden">
+                <Mid />
 
             </main>
         </motion.div>
@@ -53,7 +55,8 @@ const Section2 = ({ scrollYProgress }) => {
 
     return (
         <motion.div style={{ scale, rotate }} className="relative h-screen">
-            <TimelineDemo />
+            <Mid />
+
         </motion.div>
     );
 };
