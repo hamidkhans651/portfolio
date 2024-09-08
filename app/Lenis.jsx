@@ -42,7 +42,7 @@ const Section1 = ({ scrollYProgress }) => {
             className="sticky top-0 h-screen bg-white  text-white ">
 
             <main className="lg:block md:block hidden sm:hidden xs:hidden">
-                <Mid />
+
 
             </main>
         </motion.div>
