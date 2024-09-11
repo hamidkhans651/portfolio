@@ -18,9 +18,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Loader.jsx", "Menu/page.tsx", "app/components/Button.tsx", "app/Menu/Menu.tsx", "app/page.jsx", "app/components/MenuBar/Menu.jsx", "app/components/Footer/Footer.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx"],
   "exclude": ["node_modules"]
 }
