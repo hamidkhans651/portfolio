@@ -11,22 +11,28 @@ export default function index() {
     const description = useRef(null);
     const isInView = useInView(description)
     return (
-        <div ref={description} className={styles.description} >
-            <div className={styles.body}>
-                <p>
-                    {
-                        phrase.split(" ").map((word, index) => {
-                            return <span key={index} className={styles.mask} ><motion.span variants={slideUp} custom={index} animate={isInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
-                        })
-                    }
-                </p>
-                <motion.p variants={opacity} animate={isInView ? "open" : "closed"} className='lg:block hidden'>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</motion.p>
-                <div data-scroll data-scroll-speed={0.1} className='lg:block hidden'>
-                    <Rounded className={styles.button}>
-                        <p >About me</p>
-                    </Rounded>
+
+        <main className=''>
+
+            <div ref={description} className={styles.description} >
+                <div className={styles.body}>
+                    <p>
+                        {
+                            phrase.split(" ").map((word, index) => {
+                                return <span key={index} className={styles.mask} ><motion.span variants={slideUp} custom={index} animate={isInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
+                            })
+                        }
+                    </p>
+                    <motion.p variants={opacity} animate={isInView ? "open" : "closed"} className='lg:block hidden'>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</motion.p>
+                    <div data-scroll data-scroll-speed={0.1} className='lg:block hidden'>
+                        <Rounded className={styles.button}>
+                            <p >About me</p>
+                        </Rounded>
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </main>
+
     )
 }
