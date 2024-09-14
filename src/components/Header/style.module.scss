@@ -1,4 +1,4 @@
-.header{
+.header {
     position: absolute;
     display: flex;
     z-index: 1;
@@ -10,57 +10,64 @@
     font-weight: 300;
     box-sizing: border-box;
     align-items: center;
-    
-    .logo{
+
+    .logo {
         display: flex;
         cursor: pointer;
-        p{
+        
+        p {
             margin: 0px;
             transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
         }
-        .name{
+
+        .name {
             display: flex;
             position: relative;
             overflow: hidden;
             white-space: nowrap;
             margin-left: 5px;
             transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-            p{
+
+            p {
                 position: relative;
                 transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-                &:nth-of-type(2){
+                
+                &:nth-of-type(2) {
                     padding-left: 0.3em;
                 }
-                &:nth-of-type(3){
+
+                &:nth-of-type(3) {
                     position: absolute;
                     left: 120px;
                     padding-left: 0.3em;
                 }
             }
         }
-        &:hover{
-            .copyright{
+
+        &:hover {
+            .copyright {
                 transform: rotate(360deg);
             }
-            .name{
+
+            .name {
                 padding-right: 30px;
-                .codeBy{
+
+                .codeBy {
                     transform: translateX(-100%);
                 }
-                .dennis{
-                    transform: translateX(-65px);
-                }
-                .snellenberg{
+
+                .dennis, .snellenberg {
                     transform: translateX(-65px);
                 }
             }
         }
     }
-    .nav{
+
+    .nav {
         display: flex;
         align-items: center;
 
-        .el{
+        .el {
             display: flex;
             flex-direction: column;
             position: relative;
@@ -68,36 +75,48 @@
             padding: 15px;
             color: black;
             cursor: pointer;
-            &:hover{
-                .indicator{
+
+            &:hover {
+                .indicator {
                     transform: scale(1);
                 }
             }
-            .indicator{
+
+            .indicator {
                 position: absolute;
                 width: 5px;
                 height: 5px;
                 top: 45px;
                 left: 50%;
                 background-color: black;
-                
                 border-radius: 50%;
                 transform: scale(0) translateX(-50%);
                 transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
             }
         }
-        a{
+
+        a {
             cursor: pointer;
         }
-    } 
+    }
+
+    /* Media query for mobile screens */
+    // @media (max-width: 768px) {
+    //     .nav {
+    //         display: none; /* Hide navigation on mobile */
+    //     }
+
+       
+    // }
 }
-.headerButtonContainer{
+
+.headerButtonContainer {
     transform: scale(0);
     position: fixed;
     right: 0px;
     z-index: 4;
 
-    .button{
+    .button {
         position: relative;
         margin: 20px;
         width: 80px;
@@ -109,12 +128,13 @@
         align-items: center;
         justify-content: center;
     }
-    
-    .burger{
+
+    .burger {
         width: 100%;
         position: relative;
         z-index: 1;
-        &::after, &::before{
+
+        &::after, &::before {
             content: "";
             display: block;
             height: 1px;
@@ -124,28 +144,25 @@
             position: relative;
             transition: transform 0.3s;
         }
-    
-        &::after{
+
+        &::after {
             top: -5px;
         }
-    
-        &::before{
+
+        &::before {
             top: 5px;
         }
     }
-    
-    .burgerActive{
-    
-        &::after{
+
+    .burgerActive {
+        &::after {
             transform: rotate(45deg);
             top: -1px;
         }
-    
-        &::before{
+
+        &::before {
             transform: rotate(-45deg);
             top: 0px;
         }
-        
     }
 }
-
