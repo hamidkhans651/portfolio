@@ -36,7 +36,10 @@ export default function Home() {
       </AnimatePresence>
       <Landing />
       <Description />
-      <Projects />
+      <projectsection className='lg:block hidden'>
+        <Projects />
+      </projectsection>
+
 
 
     </main>
