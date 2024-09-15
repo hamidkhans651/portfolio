@@ -7,6 +7,7 @@ import Landing from '../components/Landing';
 import Projects from '../components/Projects';
 import Description from '../components/Description';
 import Header from '../components/Header/page'
+import Footer from '../components/Footer'
 // import SlidingImages from '../components/SlidingImages';
 
 
@@ -45,6 +46,7 @@ export default function Home() {
       <projectsection  className='md:block hidden'>
         <Projects />
       </projectsection>
+      <Footer/>
 
     </main>
   )
