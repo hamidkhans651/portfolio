@@ -32,6 +32,11 @@ export default function Home() {
 
   return (
     <main >
+      <header >
+        <Header />
+
+      </header>
+
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -40,7 +45,7 @@ export default function Home() {
       <projectsection  >
         <Projects />
       </projectsection>
-    
+
     </main>
   )
 }
