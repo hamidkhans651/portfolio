@@ -42,10 +42,13 @@ export default function Home() {
       </AnimatePresence>
       <Landing />
       <Description />
-      <projectsection  className='md:block hidden'>
+      <projectsection className='md:block hidden'>
         <Projects />
       </projectsection>
-      <Footer/>
+      <footer>
+        <Footer />
+      </footer>
+
 
     </main>
   )
