@@ -8,7 +8,6 @@ import Projects from '../components/Projects';
 import Description from '../components/Description';
 import Header from '../components/Header/page'
 import Footer from '../components/Footer'
-// import SlidingImages from '../components/SlidingImages';
 
 
 
