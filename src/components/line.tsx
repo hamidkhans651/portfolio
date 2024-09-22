@@ -121,36 +121,14 @@ export default function Line() {
       </div>
       <div className="flex flex-col items-end w-3/5">
         <div className="flex justify-end">
-          <p className="text-sm mt-2">Smart Development</p>
-          <p className="text-4xl w-3/4 ml-8">
+          <p className="text-sm mt-2"></p>
+          <p className="text-4xl w-3/4 ml-8 md:text-sm">
             Combining unique design and rich technology, I build digital
             products exactly as they were designed, without shortcuts or
             simplifications.
           </p>
         </div>
-        {/* <div className="flex mt-12">
-          <p>Areas</p>
-          <div className="flex w-full ml-8 flex-wrap gap-2.5">
-            <p className="border border-white rounded-full uppercase text-lg py-2.5 px-3">
-              E-commerce
-            </p>
-            <p className="border border-white rounded-full uppercase text-lg py-2.5 px-3">
-              Finance
-            </p>
-            <p className="border border-white rounded-full uppercase text-lg py-2.5 px-3">
-              Education
-            </p>
-            <p className="border border-white rounded-full uppercase text-lg py-2.5 px-3">
-              Social
-            </p>
-            <p className="border border-white rounded-full uppercase text-lg py-2.5 px-3">
-              Entertainment
-            </p>
-            <p className="border border-white rounded-full uppercase text-lg py-2.5 px-3">
-              Medicine
-            </p>
-          </div>
-        </div> */}
+ 
       </div>
     </div>
   );

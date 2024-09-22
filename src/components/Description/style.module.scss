@@ -8,14 +8,14 @@
     @media (max-width: 768px) {
         padding-left: 50px;
         padding-right: 50px;
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     // For small devices like mobile phones
     @media (max-width: 480px) {
         padding-left: 20px;
         padding-right: 10px;
-        margin-top: 100px;
+        margin-top: 70px;
 
     }
 
@@ -23,7 +23,7 @@
     .body {
         max-width: 1400px;
         display: flex;
-        gap: 4  0px;
+        gap: 1  0px;
         position: relative;
 
         p {

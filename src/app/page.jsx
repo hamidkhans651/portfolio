@@ -8,7 +8,7 @@ import Projects from '../components/Projects';
 import Description from '../components/Description';
 import Header from '../components/Header/page'
 import Footer from '../components/Footer'
-
+import Text from '../components/text-parallax-main'
 
 
 export default function Home() {
@@ -41,10 +41,16 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
-      <Description />
+      <description className='border-5 '>
+        <Description />
+        <Text />
+
+      </description>
       <projectsection className='md:block hidden'>
+
         <Projects />
       </projectsection>
+
       <footer>
         <Footer />
       </footer>

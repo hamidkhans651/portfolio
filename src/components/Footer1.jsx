@@ -9,7 +9,6 @@ export default function Footer() {
     >
       <div className='relative h-[calc(100vh+800px)] -top-[100vh]'>
         <div className='h-[800px] sticky top-[calc(100vh-800px)]'>
-        
           <Content />
         </div>
       </div>

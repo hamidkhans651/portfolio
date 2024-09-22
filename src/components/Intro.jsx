@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Text from './text-parallax-main'
+
 
 
 export default function Intro() {
   return (
-    <div className='h-screen flex text-[2vw] w-full '>
-      {/* <Text /> */}
+    <div className='h-screen flex text-[10vw] w-full  items-center justify-center '>this is intro
+     
 
     </div>
   )
