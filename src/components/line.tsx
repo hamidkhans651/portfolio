@@ -122,7 +122,7 @@ export default function Line() {
       <div className="flex flex-col items-end w-3/5">
         <div className="flex justify-end">
           <p className="text-sm mt-2"></p>
-          <p className="text-4xl w-3/4 ml-8 md:text-sm">
+          <p className="text-4xl w-3/4 ml-8 md:block hidden p-2">
             Combining unique design and rich technology, I build digital
             products exactly as they were designed, without shortcuts or
             simplifications.

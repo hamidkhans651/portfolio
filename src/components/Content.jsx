@@ -18,23 +18,24 @@ const Section1 = () => {
 }
 const Section2 = () => {
     return (
-        <div className='md:text-sm md:pd '>
-            <h1 className='text-[11vw]  leading-[0.8] '>FROM CONCEPT TO CODE</h1>
+        <div className=''>
+            <h1 className='text-7xl mb-40 leading-[1.2] font-semibold '>FROM CONCEPT TO CODE</h1>
+            <h1 className='text-[11vw] md:block hidden leading-[1] '>FROM CONCEPT TO CODE</h1>
             <Line />
-            <p className='flex justify-start'>Copyright © 2024 Hamid</p>
+            <p className='ml-[-20]'>Copyright © 2024 Hamid</p>
         </div>
     )
 }
 
 const Nav = () => {
     return (
-        <div className='flex shrink-0 gap-20'>
+        <div className='flex shrink-0  gap-10 h-20vh' >
             <div className='flex flex-col gap-1'>
-                <h3 className='mb-2 uppercase text-[#ffffff80]'>About</h3>
+                <h3 className='mb-10 uppercase text-[#ffffff80]'>DEVELOP BY </h3>
     
             </div>
-            <div className='flex flex-col gap-2'>
-                <h3 className='mb-2 uppercase text-[#ffffff80]'>Education</h3>
+            <div className='flex flex-col gap-1'>
+                <h3 className='mb-10 uppercase text-[#ffffff80]'>MUHAMMAD HAMID</h3>
 
             </div>
         </div>
