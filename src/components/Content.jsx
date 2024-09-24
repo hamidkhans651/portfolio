@@ -19,10 +19,10 @@ const Section1 = () => {
 const Section2 = () => {
     return (
         <div className=''>
-            <h1 className='text-7xl mb-40 leading-[1.2] font-semibold '>FROM CONCEPT TO CODE</h1>
+            <h1 className='text-5xl mb-40 leading-[1.2]   md:hidden block  '>FROM CONCEPT TO CODE</h1>
             <h1 className='text-[11vw] md:block hidden leading-[1] '>FROM CONCEPT TO CODE</h1>
             <Line />
-            <p className='ml-[-20]'>Copyright © 2024 Hamid</p>
+            <p className=''>Copyright © 2024 Hamid</p>
         </div>
     )
 }

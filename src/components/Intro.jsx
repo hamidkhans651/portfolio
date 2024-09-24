@@ -1,13 +1,17 @@
+import { main } from 'framer-motion/client'
 import React from 'react'
-
-
+import SimpleForm from './Form'
 
 
 export default function Intro() {
   return (
-    <div className='h-screen md:h-full bg-slate-500 flex text-[10vw] w-full  items-center justify-center '>this is intro
-     
+    <main className='p-5 h-screen'>
+      <div className='flex text-[3vw] w-full items-start '>Are you interested in working together and elevate your business to the next level? Let's get to work!
+      
+      </div>
+      <SimpleForm/>
 
-    </div>
+    </main>
+
   )
 }
