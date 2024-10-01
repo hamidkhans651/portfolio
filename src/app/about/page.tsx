@@ -1,11 +1,11 @@
 import React from 'react'
+import Menubar from '@/components/MenuBar'; 
+
 
 const page = () => {
     return (
-        <div>
-
-
-
+        <div className='p-10 '>
+              <Menubar />
             <h1>Hello I am Muhammad Hamid</h1>
             <h1>Professional Summary</h1>
             <p>
