@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className='p-10'>
         <Menubar />
-      this is work
+      this is work page
     </div>
   )
 }
