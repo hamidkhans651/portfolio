@@ -1,7 +1,6 @@
 import React from 'react'
 import Menubar from '@/components/MenuBar'; 
 
-
 const page = () => {
     return (
         <div className='p-10 '>
@@ -9,6 +8,11 @@ const page = () => {
             <h1>Hello I am Muhammad Hamid</h1>
             <h1>Professional Summary</h1>
             <p>
+
+              <div> 
+                </div>  
+
+                
                 I began my journey in software development during my college years, where I built a strong foundation in Object-Oriented Programming (OOP) using C and C++. Over time, I transitioned into the modern tech stack, mastering JavaScript, TypeScript, and Python. My passion for development now lies in creating full-stack applications, leveraging cutting-edge technologies like Next.js to build dynamic, scalable, and user-friendly interfaces.</p>
             <h1>Skills and Expertise</h1>
 
