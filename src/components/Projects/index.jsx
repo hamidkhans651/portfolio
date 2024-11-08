@@ -10,24 +10,31 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "Mart Project",
+    title: "Monolith Projects",
     src: "c2montreal.png",
-    color: "#000000"
+    color: "#000000",
+    link: "/about",
   },
   {
-    title: "Office Studio",
+    title: "Microservices Projects",
     src: "officestudio.png",
-    color: "#8C8C8C"
+    color: "#8C8C8C",
+    link: "/about",
+
   },
   {
-    title: "Locomotive",
+    title: "AI Projects",
     src: "locomotive.png",
-    color: "#EFE8D3"
+    color: "#EFE8D3",
+    link: "/about",
+
   },
   {
-    title: "Silencio",
+    title: "Creatives Works",
     src: "silencio.png",
-    color: "#706D63"
+    color: "#706D63",
+    link: "/about",
+
   }
 ]
 
@@ -80,11 +87,14 @@ export default function Home() {
   return (
     <main onMouseMove={(e) => { moveItems(e.clientX, e.clientY) }} className={styles.projects}>
       <div className={styles.body}>
+
+
         {
           projects.map((project, index) => {
             return <Project index={index} title={project.title} manageModal={manageModal} key={index} />
           })
         }
+
       </div>
 
       <button >
