@@ -44,6 +44,7 @@ export default function Home() {
       <description className='border-5 '>
         <Description />
         <Text />
+
       </description>
       <projectsection className='md:block hidden'>
 

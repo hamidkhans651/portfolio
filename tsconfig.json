@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/components/text-parallax-main.js", "src/components/Form.jsx", "src/components/WorkHistory.jsx", "src/components/Heading.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/components/text-parallax-main.js", "src/components/Form.jsx"],
   "exclude": ["node_modules"]
 }
