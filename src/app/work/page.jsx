@@ -15,35 +15,35 @@ const Page = () => {
         <div className="banner">
           <div className="slider" style={{ '--quantity': 10 }}>
             <div className="item" style={{ '--position': 1 }}>
-              <Image src="/images/dragon_1.jpg" width={100} height={100} alt="" />
+              <Image src="/images/HTML5.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 2 }}>
-              <Image src="/images/dragon_2.jpg" width={100} height={100} alt="" />
+              <Image src="/images/JavaScript.png" width={100} height={100} alt="" />
             </div>
             {/* More items */}
             <div className="item" style={{ '--position': 3 }}>
-              <Image src="/images/dragon_3.jpg" width={100} height={100} alt="" />
+              <Image src="/images/TypeScript.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 4 }}>
-              <Image src="/images/dragon_4.jpg" width={100} height={100} alt="" />
+              <Image src="/images/Node.js.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 5 }}>
-              <Image src="/images/dragon_5.jpg" width={100} height={100} alt="" />
+              <Image src="/images/PostgresSQL.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 6 }}>
-              <Image src="/images/dragon_6.jpg" width={100} height={100} alt="" />
+              <Image src="/images/Tailwind CSS.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 7 }}>
-              <Image src="/images/dragon_7.jpg" width={100} height={100} alt="" />
+              <Image src="/images/FastAPI.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 8 }}>
-              <Image src="/images/dragon_8.jpg" width={100} height={100} alt="" />
+              <Image src="/images/Docker.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 9 }}>
-              <Image src="/images/dragon_9.jpg" width={100} height={100} alt="" />
+              <Image src="/images/Next.js.png" width={100} height={100} alt="" />
             </div>
             <div className="item" style={{ '--position': 20 }}>
-              <Image src="/images/dragon_10.jpg" width={100} height={100} alt="" />
+              <Image src="/images/favicon.ico" width={100} height={100} alt="" />
             </div>
           </div>
           <div className="content">
@@ -56,6 +56,8 @@ const Page = () => {
             <div className="model"></div>
           </div>
         </div>
+
+        
       </main>
 
       <style jsx>{`
@@ -116,7 +118,7 @@ const Page = () => {
     font-family: 'ICA Rubrik';
     font-size: 16em;
     line-height: 1em;
-    color: #25283B;
+    color: black;
     position: relative;
 }
 .banner .content h1::after{
@@ -165,14 +167,15 @@ const Page = () => {
         font-size: 7em;
     }
     .banner .content .author{
-        color: #fff;
+        color: black;
         padding: 20px;
         text-shadow: 0 10px 20px #000;
         z-index: 2;
         max-width: unset;
         width: 100%;
         text-align: center;
-        padding: 0 30px;
+        padding: 0 20px;
+        
     }
 }
 @media screen and (max-width: 767px) {

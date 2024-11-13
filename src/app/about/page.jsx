@@ -65,10 +65,10 @@ const page = () => {
     }, [])
   
     return (
-        <div className=' '>
+        <div className=''>
 
             <body class="bg-gradient-to-r from-slate-700 to-black-800 min-h-screen text-white">
-                <nav className='p-10 pr-10'><Menubar />
+                <nav className='flex p-5 fixed top-0 left-0 w-full z-50'><Menubar />
                 </nav>
                 <main class="container mx-auto px-6 py-12">
                     <section id="about" class="mb-20 animate-fade-in-up" >
