@@ -34,7 +34,6 @@ export default function Home() {
     <main >
       <header >
         <Header />
-
       </header>
 
       <AnimatePresence mode='wait'>

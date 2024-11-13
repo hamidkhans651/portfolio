@@ -24,6 +24,14 @@ const navItems = [
     title: "Contact",
     href: "/contact",
   },
+  {
+    title: "Resume",
+    href: "/contact",
+  },
+  {
+    title: "Blog",
+    href: "/contact",
+  },
 ]
 
 export default function index() {
