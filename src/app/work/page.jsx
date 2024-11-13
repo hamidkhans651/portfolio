@@ -42,11 +42,11 @@ const Page = () => {
             </div>
           </div>
           <div className="content">
-            <h1 data-content="CSS ONLY">Projects</h1>
+            <h1 data-content="Projects">Projects</h1>
             <div className="author">
-              <h2>LUN DEV</h2>
-              <p><b>Web Design</b></p>
-              <p>Subscribe to the channel to watch many interesting videos</p>
+              <h2>My</h2>
+              <p><b>Portfolio</b></p>
+              <p>Scroll down for more </p>
             </div>
             <div className="model"></div>
           </div>
