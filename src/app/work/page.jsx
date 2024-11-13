@@ -2,11 +2,16 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Menubar from '@/components/MenuBar';
+
 
 const Page = () => {
   return (
     <>
       <main>
+        <nav className='flex p-5 fixed top-0 left-0 w-full z-50'>
+        <Menubar /></nav>
+
         <div className="banner">
           <div className="slider" style={{ '--quantity': 10 }}>
             <div className="item" style={{ '--position': 1 }}>
