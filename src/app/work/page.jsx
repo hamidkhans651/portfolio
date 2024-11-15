@@ -4,13 +4,28 @@ import React from 'react';
 import Image from 'next/image';
 import Menubar from '@/components/MenuBar';
 
+const Card = ({ title, description, imageUrl }) => {
+  return (
+    <div className="card">
+      <img src={imageUrl} alt={title} className="card-image" />
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+};
+
+
 
 const Page = () => {
+
+
   return (
     <>
       <main>
         <nav className='flex p-5 fixed top-0 left-0 w-full z-50'>
-        <Menubar /></nav>
+          <Menubar /></nav>
 
         <div className="banner">
           <div className="slider" style={{ '--quantity': 10 }}>
@@ -56,8 +71,9 @@ const Page = () => {
             <div className="model"></div>
           </div>
         </div>
+    
+     
 
-        
       </main>
 
       <style jsx>{`
@@ -193,6 +209,8 @@ const Page = () => {
         font-size: 5em;
     }
 }
+
+
       `}</style>
     </>
   );
