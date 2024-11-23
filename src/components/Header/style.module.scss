@@ -14,7 +14,7 @@
     .logo {
         display: flex;
         cursor: pointer;
-        
+
         p {
             margin: 0px;
             transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
@@ -31,7 +31,7 @@
             p {
                 position: relative;
                 transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-                
+
                 &:nth-of-type(2) {
                     padding-left: 0.3em;
                 }
@@ -56,7 +56,8 @@
                     transform: translateX(-100%);
                 }
 
-                .dennis, .snellenberg {
+                .dennis,
+                .snellenberg {
                     transform: translateX(-65px);
                 }
             }
@@ -106,7 +107,7 @@
     //         display: none; /* Hide navigation on mobile */
     //     }
 
-       
+
     // }
 }
 
@@ -134,7 +135,8 @@
         position: relative;
         z-index: 1;
 
-        &::after, &::before {
+        &::after,
+        &::before {
             content: "";
             display: block;
             height: 1px;
