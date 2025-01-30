@@ -38,4 +38,72 @@
 
         }
     }
+
+
+    @media (max-width: 768px) {
+        .menu {
+            height: auto;
+            /* Adjust height for smaller screens */
+            width: 100%;
+            /* Take up full width on mobile */
+        }
+
+        .body {
+            padding: 50px;
+            /* Reduced padding for mobile */
+        }
+
+        .nav {
+            font-size: 36px;
+            /* Smaller font size for mobile */
+            margin-top: 40px;
+            /* Adjusted top margin */
+            gap: 8px;
+            /* Reduced gap for better space usage */
+        }
+
+        .header {
+            font-size: 10px;
+            /* Smaller header font size */
+            margin-bottom: 20px;
+            /* Reduced margin */
+        }
+
+        .nav a {
+            font-size: 18px;
+            /* Adjusted link font size */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .menu {
+            padding: 20px;
+            /* Further reduce padding for very small screens */
+        }
+
+        .body {
+            padding: 40px;
+        }
+
+        .nav {
+            font-size: 90px;
+            /* Even smaller font size for smaller screens */
+            margin-top: 20px;
+            /* Reduced top margin */
+            gap: 6px;
+            /* Tightened the gap */
+        }
+
+        .header {
+            font-size: 8px;
+            /* Adjusted header font size */
+            margin-bottom: 10px;
+            /* Adjusted margin */
+        }
+
+        .nav a {
+            font-size: 16px;
+            /* Adjusted link font size */
+        }
+    }
 }
