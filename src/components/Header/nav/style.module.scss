@@ -10,7 +10,7 @@
     .body {
         box-sizing: border-box;
         height: 100%;
-        padding: 100px;
+        padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -41,69 +41,30 @@
 
 
     @media (max-width: 768px) {
-        .menu {
-            height: auto;
-            /* Adjust height for smaller screens */
-            width: 100%;
-            /* Take up full width on mobile */
-        }
+
+        width: 100%; // Make the menu take full width
+        padding: 50px; // Reduce padding for smaller screens
 
         .body {
             padding: 50px;
-            /* Reduced padding for mobile */
-        }
 
-        .nav {
-            font-size: 36px;
-            /* Smaller font size for mobile */
-            margin-top: 40px;
-            /* Adjusted top margin */
-            gap: 8px;
-            /* Reduced gap for better space usage */
-        }
-
-        .header {
-            font-size: 10px;
-            /* Smaller header font size */
-            margin-bottom: 20px;
-            /* Reduced margin */
-        }
-
-        .nav a {
-            font-size: 18px;
-            /* Adjusted link font size */
+            .nav {
+                font-size: 90px; // Adjust font size for smaller screens
+            }
         }
     }
 
     @media (max-width: 480px) {
-        .menu {
-            padding: 20px;
-            /* Further reduce padding for very small screens */
-        }
+        padding: 20px;
+        width: 100%;
 
         .body {
-            padding: 40px;
-        }
+            padding: 20px;
 
-        .nav {
-            font-size: 90px;
-            /* Even smaller font size for smaller screens */
-            margin-top: 20px;
-            /* Reduced top margin */
-            gap: 6px;
-            /* Tightened the gap */
-        }
-
-        .header {
-            font-size: 8px;
-            /* Adjusted header font size */
-            margin-bottom: 10px;
-            /* Adjusted margin */
-        }
-
-        .nav a {
-            font-size: 16px;
-            /* Adjusted link font size */
+            .nav {
+                font-size: 30px; // Further reduce font size for mobile
+                gap: 8px;
+            }
         }
     }
 }
