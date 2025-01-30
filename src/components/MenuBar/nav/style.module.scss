@@ -1,68 +1,67 @@
 .menu {
-    height: 100vh;
-    position: fixed;
-    background-color: rgb(41, 41, 41);
-    right: 0;
-    top: 0;
-    color:rgb(153, 153, 153);
-    width: 300px; // Example width for larger screens
-  // zzzs
-    .body {
-      box-sizing: border-box;
-      height: 100%;
-      padding: 50px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(41, 41, 41);
+  right: 0;
+  top: 0;
+  color:rgb(153, 153, 153);
+  width: 300px; // Example width for larger screens
+// zzzs
+  .body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    .nav {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-   
-      .nav {
-        display: flex;
-        flex-direction: column;
-        font-size: 40px;
-        gap: 1px;
-        // height: 40px;
-  
-        .header {
-          color: rgb(153, 153, 153);
-          border-bottom: 1px solid rgb(153, 153, 153);
-          text-transform: uppercase;
-          font-size: 15px;
-          // margin-bottom: 2px;
-        }
-  
-        a {
-          text-decoration: none;
-          color: white;
-          font-weight: 300;
-        }
+      font-size: 40px;
+      gap: 1px;
+      // height: 40px;
+
+      .header {
+        color: rgb(153, 153, 153);
+        border-bottom: 1px solid rgb(153, 153, 153);
+        text-transform: uppercase;
+        font-size: 15px;
+        // margin-bottom: 2px;
       }
-    }
-  
-    @media (max-width: 768px) {
-      // Tablet and mobile screen adjustments
-      width: 100%; // Make the menu take full width
-      padding: 50px; // Reduce padding for smaller screens
-  
-      .body {
-        padding: 50px;
-        .nav {
-          font-size:90px; // Adjust font size for smaller screens
-        }
-      }
-    }
-  
-    @media (max-width: 480px) {
-      // Further adjustments for very small screens (phones)
-      padding: 20px;
-      width: 100%;
-  
-      .body {
-        padding: 20px;
-        .nav {
-          font-size: 30px; // Further reduce font size for mobile
-          gap: 8px;
-        }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
       }
     }
   }
-  
+
+  @media (max-width: 768px) {
+    // Tablet and mobile screen adjustments
+    width: 100%; // Make the menu take full width
+    padding: 50px; // Reduce padding for smaller screens
+
+    .body {
+      padding: 50px;
+      .nav {
+        font-size:90px; // Adjust font size for smaller screens
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    // Further adjustments for very small screens (phones)
+    padding: 20px;
+    width: 100%;
+
+    .body {
+      padding: 20px;
+      .nav {
+        font-size: 30px; // Further reduce font size for mobile
+        gap: 8px;
+      }
+    }
+  }
+}
