@@ -59,11 +59,11 @@ const page = () => {
 
         // Cleanup function to remove event listeners
         return () => {
-            if (menuToggle) menuToggle.removeEventListener('click', () => {});
-            anchors.forEach(anchor => anchor.removeEventListener('click', () => {}));
+            if (menuToggle) menuToggle.removeEventListener('click', () => { });
+            anchors.forEach(anchor => anchor.removeEventListener('click', () => { }));
         };
     }, [])
-  
+
     return (
         <div className=''>
 
