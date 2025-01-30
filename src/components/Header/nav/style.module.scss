@@ -38,4 +38,62 @@
 
         }
     }
+
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .body {
+            padding: 30px;
+            /* Adjust padding */
+        }
+
+        .nav {
+            font-size: 80px;
+            /* Increased font size for smaller screens */
+            gap: 10px;
+            /* Adjust gap */
+            margin-top: 40px;
+            /* Reduced top margin */
+            margin-left: 20px;
+            /* Add some left margin */
+        }
+
+        .header {
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 18px;
+            /* Larger font size for links */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .body {
+            padding: 20px;
+            /* Further reduced padding */
+        }
+
+        .nav {
+            font-size: 60px;
+            /* Even larger font size */
+            gap: 8px;
+            /* Adjust gap */
+            margin-top: 30px;
+            /* Reduced top margin */
+            margin-left: 20px;
+            /* Maintain left margin */
+        }
+
+        .header {
+            font-size: 8px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            font-size: 16px;
+            /* Larger font size for links */
+        }
+    }
 }
