@@ -10,9 +10,9 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "Mart Project",
-    src: "c2montreal.png",
-    color: "#000000"
+  title: "Office Studio",
+    src: "2.jpg",
+    color: "#8C8C8C"
   },
   {
     title: "Office Studio",
@@ -104,7 +104,7 @@ export default function Home() {
                 const { src, color } = project
                 return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>
                   <Image
-                    src={`/images/${src}`}
+                    src={`/public/images/${src}`}
                     width={300}
                     height={0}
                     alt="image"
