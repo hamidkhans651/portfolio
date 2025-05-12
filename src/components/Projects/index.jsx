@@ -13,19 +13,25 @@ const projects = [
     title: "Real-estate-project",
     src:"real-estate.jpg",
     color: "#000000"
+    title: "Real-estate-project",
+    src:"real-estate.jpg",
+    color: "#000000"
   },
   {
     title: "Office Studio",
+    src: "2.jpg",
     src: "2.jpg",
     color: "#8C8C8C"
   },
   {
     title: "Locomotive",
     src: "3.jpg",
+    src: "3.jpg",
     color: "#EFE8D3"
   },
   {
     title: "Silencio",
+    src: "3.jpg",
     src: "3.jpg",
     color: "#706D63"
   }
