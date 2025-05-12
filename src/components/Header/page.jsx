@@ -60,7 +60,7 @@ export default function Index() {
                     <p className={styles.copyright}>©</p>
                     <div className={styles.name}>
                         <p className={styles.codeBy}>Code by</p>
-                        <p className={styles.dennis}>Hamid</p>
+                        <p className={styles.dennis}>Harry</p>
                         <p className={styles.snellenberg}>Devloper</p>
                     </div>
                 </div>
@@ -83,19 +83,6 @@ export default function Index() {
                         <Magnetic>
                             <div className={styles.el}>
                                 <Link href="/contact">Contact</Link>
-                                <div className={styles.indicator}></div>
-                            </div>
-                        </Magnetic>
-                        <Magnetic>
-                            <div className={styles.el}>
-                                <Link href="/contact">Resume</Link>
-                                <div className={styles.indicator}></div>
-                            </div>
-                        </Magnetic>
-
-                        <Magnetic>
-                            <div className={styles.el}>
-                                <Link href="/contact">Blog</Link>
                                 <div className={styles.indicator}></div>
                             </div>
                         </Magnetic>
