@@ -70,7 +70,7 @@ export default function Index() {
                     <div className={styles.nav}>
                         <Magnetic>
                             <div className={styles.el}>
-                                <Link href="/about">Work</Link>
+                                <Link href="/work">Work</Link>
                                 <div className={styles.indicator}></div>
                             </div>
                         </Magnetic>
@@ -83,6 +83,19 @@ export default function Index() {
                         <Magnetic>
                             <div className={styles.el}>
                                 <Link href="/contact">Contact</Link>
+                                <div className={styles.indicator}></div>
+                            </div>
+                        </Magnetic>
+                        <Magnetic>
+                            <div className={styles.el}>
+                                <Link href="/contact">Resume</Link>
+                                <div className={styles.indicator}></div>
+                            </div>
+                        </Magnetic>
+
+                        <Magnetic>
+                            <div className={styles.el}>
+                                <Link href="/contact">Blog</Link>
                                 <div className={styles.indicator}></div>
                             </div>
                         </Magnetic>
