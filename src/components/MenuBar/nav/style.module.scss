@@ -28,7 +28,7 @@
           border-bottom: 1px solid rgb(153, 153, 153);
           text-transform: uppercase;
           font-size: 11px;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
   
         a {
@@ -58,8 +58,9 @@
   
       .body {
         padding: 20px;
+        height: 50vh;
         .nav {
-          font-size: 90px; // Further reduce font size for mobile
+          font-size: 80px; // Further reduce font size for mobile
           gap: 1px;
         }
       }
