@@ -88,7 +88,7 @@ export default function Index() {
                         </Magnetic>
                         <Magnetic>
                             <div className={styles.el}>
-                                <Link href="/contact">Resume</Link>
+                                <Link href="/resume">Resume</Link>
                                 <div className={styles.indicator}></div>
                             </div>
                         </Magnetic>

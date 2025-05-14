@@ -25,3 +25,16 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Custom styles for the resume page */
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.resume-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}

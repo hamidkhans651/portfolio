@@ -1,0 +1,36 @@
+﻿MUHAMMAD HAMID 
+
+
+muhammadhamid.jj.7@gmail.com | (+92) 0324-8061046 
+  
+@hamid-khans651 
+  
+/muhammad-hamid 
+       Portfolio 
+
+
+SKILLS 
+❖Languages: HTML, CSS, Javascript,Typescript,
+❖Frameworks & Libraries:React,Next.js,Node.JS Tailwind CSS, Shadcn UI,Bootstrap 5, Material ui,Fastapi,Poetry,
+
+
+       ❖Databases: PostgresSQL,MySQL,MongoDB
+❖Tools: VsCode,Docker,Postman,Xampp, Git
+❖IT Constructs & Practices: OOP,Version Control,Responsive Design,API Code                                
+                                              Reviews, Testing and Development
+❖Other Skills: Adaptability, Leadership, Team building, Planning, Problem Solving
+EDUCATION 
+❖ PIAIC | Jamestack & Cloud Native Engineer (Sep 2023 - October 2025 | Present)                               
+❖ DAE (CIT) | Saifee Eide Zahabi Institute of Science and technology,karachi X.ll (21-25)
+❖ X (BSEK) | The Citizen Foundation School 80.02%| 2021 
+
+
+ACADEMIC PROJECTS 
+❖ Full Stack Engineer | Presidential Initiative for AI (Sep ‘20 - Oct ‘20) 
+Build out the Full Stack E-Comemerce using Next.JS 14,Tailwind CSS,and Shadcn UI Implementing card functionality using Vercel Postgress SQL and Drizzle ORM connecting to sanity as back-end CMS with all the products Data connecting Stripe APIs to power Online Payment processing for e-commerce use React-hook-toast library to adds beautiful Notifications use icons from Lucid (Shadcn UI) 
+❖ Full Stack Web AI Application | Presidential Initiative for AI (Feb ‘10 - Feb ‘15) 
+Build the Full Stack photo gallery using cloudinary,next.js and shadcn UI this entire project was build without using database,instead of we use of all the build in cloudinary functionality for uploading images tagging our images,editing images,creating albums and open ai for key Ai prompts to generate ai images 
+POSITION OF RESPONSIBILITY 
+❖ Student of Quarter 3 | PIAIC (29 Feb -29 May ) Attend Cloud Native A Classes & and participate in (CNAI) projects in UIT university 
+ACHIEVEMENTS / HOBBIES 
+● Active member of developer community, regularly engaging in hackathons to refine my coding skills and stay abreast of the latest industry trends.
