@@ -29,11 +29,6 @@ export default function ResumePage() {
           </p>
         </div>
 
-        {/* PDF Viewer Component */}
-        <div className="mb-8 border rounded-lg shadow-lg overflow-hidden">
-          <PDFViewer filePath="/resume.pdf" />
-        </div>
-
         {/* Download Options Component */}
         <DownloadOptions />
       </div>
