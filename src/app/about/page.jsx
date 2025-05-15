@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+
 import React from "react";
-import Menubar from "@/components/MenuBar";
 import Link from "next/link";
+
+
 
 const page = () => {
   useEffect(() => {
@@ -65,10 +67,12 @@ const page = () => {
 
   return (
     <div className="">
-      <body class="bg-gradient-to-r from-slate-700 to-black-800 min-h-screen text-white">
-        <nav className="flex p-5 fixed top-0 left-0 w-full z-50">
-          <Menubar />
-        </nav>
+      <body class=" min-h-screen bg-white text-black">
+        <nav className="flex justify-center items-center max-w-3xl mx-auto py-6  sm:px-6 lg:px-8">
+                <Link href="/" className="text-black hover:text-blue-200">
+                  &larr; Back to Portfolio
+                </Link>
+              </nav>
         <main class="container mx-auto px-6 py-12">
           <section id="about" class="mb-20 animate-fade-in-up">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">
