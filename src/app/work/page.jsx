@@ -31,7 +31,7 @@ const Page = () => {
           <div className="slider" style={{ "--quantity": 10 }}>
             <div className="item" style={{ "--position": 1 }}>
               <Image
-                src="/public/images/HTML5.png"
+                src="/images/HTML5.png"
                 width={100}
                 height={100}
                 alt="HTML5"
@@ -39,7 +39,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 2 }}>
               <Image
-                src="/public/images/JavaScript.png"
+                src="/images/JavaScript.png"
                 width={100}
                 height={100}
                 alt="JavaScript"
@@ -48,7 +48,7 @@ const Page = () => {
             {/* More items */}
             <div className="item" style={{ "--position": 3 }}>
               <Image
-                src="/public/images/TypeScript.png"
+                src="/images/TypeScript.png"
                 width={100}
                 height={100}
                 alt="TypeScript"
@@ -56,7 +56,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 4 }}>
               <Image
-                src="/public/images/Node.js.png"
+                src="/images/Node.js.png"
                 width={100}
                 height={100}
                 alt="Node.js"
@@ -64,7 +64,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 5 }}>
               <Image
-                src="/public/images/PostgresSQL.png"
+                src="/images/PostgresSQL.png"
                 width={100}
                 height={100}
                 alt="PostgreSQL"
@@ -72,7 +72,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 6 }}>
               <Image
-                src="/public/images/Tailwind CSS.png"
+                src="/images/Tailwind CSS.png"
                 width={100}
                 height={100}
                 alt="Tailwind CSS"
@@ -80,7 +80,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 7 }}>
               <Image
-                src="/public/images/FastAPI.png"
+                src="/images/FastAPI.png"
                 width={100}
                 height={100}
                 alt="FastAPI"
@@ -88,7 +88,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 8 }}>
               <Image
-                src="/public/images/Docker.png"
+                src="/images/Docker.png"
                 width={100}
                 height={100}
                 alt="Docker"
@@ -104,7 +104,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 10 }}>
               <Image
-                src="/public/images/favicon.ico"
+                src="/images/favicon.ico"
                 width={100}
                 height={100}
                 alt="Favicon"
