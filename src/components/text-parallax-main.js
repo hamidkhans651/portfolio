@@ -26,9 +26,9 @@ export default function Home() {
     <main className="overflow-hidden">
       <div className='h-[5vh] md:h-[25vh]' />
       <div ref={container}>
-        <Slide src="/public/images/1.jpg" direction={'left'} left={"-40%"} progress={scrollYProgress} />
-        <Slide src="/public/images/2.jpg" direction={'right'} left={"-25%"} progress={scrollYProgress} />
-        <Slide src="/public/images/3.jpg" direction={'left'} left={"-75%"} progress={scrollYProgress} />
+        <Slide src="/images/1.jpg" direction={'left'} left={"-40%"} progress={scrollYProgress} />
+        <Slide src="/images/2.jpg" direction={'right'} left={"-25%"} progress={scrollYProgress} />
+        <Slide src="/images/3.jpg" direction={'left'} left={"-75%"} progress={scrollYProgress} />
       </div>
       <div className='' />
     </main>

@@ -15,12 +15,12 @@ const projects = [
     color: "#000000"
   },
   {
-    title: "Office Studio",
-    src: "2.jpg",
+    title: "Note-app",
+    src: "note.png",
     color: "#8C8C8C"
   },
   {
-    title: "Locomotive",
+    title: "Laravel-project",
     src: "3.jpg",
     color: "#EFE8D3"
   },
@@ -104,7 +104,7 @@ export default function Home() {
                 const { src, color } = project
                 return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>
                   <Image
-                    src={`/public/images/${src}`}
+                    src={`/images/${src}`}
                     // src="/public/images/1.jpg"
                     width={300}
                     height={0}
