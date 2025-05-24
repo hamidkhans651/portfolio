@@ -20,8 +20,8 @@ const projects = [
     color: "#8C8C8C"
   },
   {
-    title: "Laravel-project",
-    src: "3.jpg",
+    title: "Mart-Project",
+    src: "mart.png",
     color: "#EFE8D3"
   },
   {
