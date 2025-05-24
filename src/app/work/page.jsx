@@ -171,7 +171,7 @@ const Page = () => {
             </p>
           </motion.div>
 
-          {/* Box 2 - Hidden on mobile, visible on md screens and up */}
+          {/* Box 2 - Hidden on mobile */}
           <motion.div
             className=" w-full p-6 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 shadow-lg border border-pink-100 md:block"
             variants={boxVariants}
