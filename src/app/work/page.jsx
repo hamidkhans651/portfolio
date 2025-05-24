@@ -1,51 +1,132 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { boxData } from "@/boxdata"; // Import your data
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Card = ({ title, description, imageUrl }) => {
+// Animation variants (keep your existing ones)
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const boxVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 10,
+    },
+  },
+};
+
+const BoxComponent = ({ box }) => (
+  <motion.div
+    className={`w-full p-6 rounded-xl bg-gradient-to-br ${box.gradientFrom} ${box.gradientTo} shadow-lg border ${box.borderColor} md:block`}
+    variants={boxVariants}
+    whileHover={{
+      scale: 1.02,
+      boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
+    }}
+  >
+    <h2 className={`text-2xl font-bold mb-3 ${box.textColor}`}>{box.title}</h2>
+    <p className="text-gray-600">{box.description}</p>
+  </motion.div>
+);
+
+const ScrollButton = () => {
+  const [isAtBottom, setIsAtBottom] = useState(false);
+
+  const checkIfAtBottom = () => {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollPosition = window.scrollY;
+    
+    setIsAtBottom(windowHeight + scrollPosition >= documentHeight - 100);
+  };
+
+  const scrollTo = () => {
+    if (isAtBottom) {
+      // Scroll to top if at bottom
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    } else {
+      // Scroll to bottom if not at bottom
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+      });
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkIfAtBottom);
+    return () => window.removeEventListener("scroll", checkIfAtBottom);
+  }, []);
+
   return (
-    <div className="card">
-      <img src={imageUrl} alt={title} className="card-image" />
-      <div className="card-content">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
+      <button
+      className="fixed right-6 bottom-6 w-12 h-12 rounded-full  text-black flex items-center justify-center shadow-lg transition-all duration-300 z-50 hover:bg-gray-200 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-gray-300"
+      onClick={scrollTo}
+      aria-label={isAtBottom ? "Scroll to top" : "Scroll to bottom"}
+    >
+      {isAtBottom ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      )}
+    </button>
   );
 };
 
+
+
+
 const Page = () => {
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const boxVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-      },
-    },
-  };
-
   return (
     <>
-      <main className="bg-white text-black">
+    <main className="bg-white text-black">
+        <ScrollButton />
         <nav className="flex justify-center items-center max-w-3xl mx-auto py-6 sm:px-6 lg:px-8">
           <Link href="/" className="text-black hover:text-blue-600">
             &larr; Back to Portfolio
@@ -121,7 +202,7 @@ const Page = () => {
             </div>
             <div className="item" style={{ "--position": 9 }}>
               <Image
-                src="/public/images/Next.js.png"
+                src="/images/Next.js.png"
                 width={100}
                 height={100}
                 alt="Next.js"
@@ -148,45 +229,17 @@ const Page = () => {
             <div className="model"></div>
           </div>
         </div>
+  <motion.div
+        className="flex flex-col gap-5 p-4 md:flex-row md:gap-8 md:p-6"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+      >
+        {boxData.map((box) => (
+          <BoxComponent key={box.id} box={box} />
+        ))}
+      </motion.div>
 
-        <motion.div
-          className="flex flex-col gap-5 p-4 md:flex-row md:gap-8 md:p-6"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
-          {/* Box 1 - Always visible */}
-          <motion.div
-            className="w-full p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 shadow-lg border border-indigo-100"
-            variants={boxVariants}
-            whileHover={{
-              scale: 1.02,
-              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
-            }}
-          >
-            <h2 className="text-2xl font-bold mb-3 text-indigo-600">Box 1</h2>
-            <p className="text-gray-600">
-              This beautifully animated box is always visible. On larger
-              screens, it appears side by side with Box 2.
-            </p>
-          </motion.div>
-
-          {/* Box 2 - Hidden on mobile */}
-          <motion.div
-            className=" w-full p-6 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 shadow-lg border border-pink-100 md:block"
-            variants={boxVariants}
-            whileHover={{
-              scale: 1.02,
-              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
-            }}
-          >
-            <h2 className="text-2xl font-bold mb-3 text-pink-600">Box 2</h2>
-            <p className="text-gray-600">
-              This elegantly revealed box appears only on larger screens with a
-              smooth animation.
-            </p>
-          </motion.div>
-        </motion.div>
       </main>
 
       <style jsx>{`
@@ -328,7 +381,7 @@ const Page = () => {
           }
         }
       `}</style>
-    </>
+   </>
   );
 };
 
