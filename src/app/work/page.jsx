@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Card = ({ title, description, imageUrl }) => {
   return (
@@ -17,9 +18,33 @@ const Card = ({ title, description, imageUrl }) => {
 };
 
 const Page = () => {
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const boxVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      },
+    },
+  };
+
   return (
     <>
-      
       <main className="bg-white text-black">
         <nav className="flex justify-center items-center max-w-3xl mx-auto py-6 sm:px-6 lg:px-8">
           <Link href="/" className="text-black hover:text-blue-600">
@@ -123,6 +148,45 @@ const Page = () => {
             <div className="model"></div>
           </div>
         </div>
+
+        <motion.div
+          className="flex flex-col gap-5 p-4 md:flex-row md:gap-8 md:p-6"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          {/* Box 1 - Always visible */}
+          <motion.div
+            className="w-full p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 shadow-lg border border-indigo-100"
+            variants={boxVariants}
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <h2 className="text-2xl font-bold mb-3 text-indigo-600">Box 1</h2>
+            <p className="text-gray-600">
+              This beautifully animated box is always visible. On larger
+              screens, it appears side by side with Box 2.
+            </p>
+          </motion.div>
+
+          {/* Box 2 - Hidden on mobile, visible on md screens and up */}
+          <motion.div
+            className=" w-full p-6 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 shadow-lg border border-pink-100 md:block"
+            variants={boxVariants}
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <h2 className="text-2xl font-bold mb-3 text-pink-600">Box 2</h2>
+            <p className="text-gray-600">
+              This elegantly revealed box appears only on larger screens with a
+              smooth animation.
+            </p>
+          </motion.div>
+        </motion.div>
       </main>
 
       <style jsx>{`

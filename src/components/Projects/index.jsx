@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
       <button >
-        <Link href="/about">
+        <Link href="/work">
           <Rounded>
             <p>More work</p>
           </Rounded>
