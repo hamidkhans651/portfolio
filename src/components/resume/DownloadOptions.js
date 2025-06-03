@@ -2,8 +2,8 @@
 export default function DownloadOptions() {
     const resumeFiles = [
       { name: 'PDF', path: '/resume.pdf' },
-      { name: 'Word', path: '/resume.docx' },
-      { name: 'Plain Text', path: '/resume.txt' },
+      { name: 'Word', path: '/ muhammad hamid resume.docx' },
+      { name: 'Plain Text', path: '/muhammad hamid  resume.txt' },
     ];
   
     return (
