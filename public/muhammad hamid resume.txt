@@ -1,0 +1,35 @@
+﻿MUHAMMAD HAMID 
+muhammadhamid.jj.7@gmail.com 
+(+92) 0324-8061046 
+GitHub: @hamid-khans651 | LinkedIn: /muhammad-hamid 
+Portfolio: https://portfolio-h3wy.vercel.app/
+SKILLS
+* Languages: HTML, CSS, JavaScript, TypeScript
+* Frameworks & Libraries: React, Next.js, Node.js, Tailwind CSS, ShadCN UI, Bootstrap 5, Material UI, NextUI, Drizzle ORM
+* Databases: PostgreSQL, MySQL, MongoDB
+* Tools: VS Code, Docker, Postman, XAMPP, Git
+* IT Practices: OOP, Version Control, Responsive Design, API Development, Code Reviews, TDD/BDD
+* Soft Skills: Adaptability, Leadership, Team Building, Problem-Solving
+EDUCATION
+* PIAIC | Jamstack & Cloud Native Engineer (Sep 2023 - Oct 2025 | Ongoing)
+* DAE (CIT) | Saifee Eide Zahabi Institute of Science & Technology, Karachi (2021-2025)
+* Matric (BSEK) | The Citizen Foundation School (80.02% | 2021)
+PROJECTS
+1. Full-Stack Real Estate Web App (Nov 2023 - Feb 2024)
+* Built with Next.js, Drizzle ORM (Neon DB), and NextAuth for authentication.
+* Features Zod validation, NextUI/Tailwind CSS, and ImageKit for media management.
+* Includes role-based dashboards (user/admin) with CRUD operations for properties.
+* Hosted on Vercel with CI/CD via GitHub.
+2. Link Manager App (Next.js 14) (Mar 2024)2. Link Manager App (Next.js 14) (Mar 2024)
+* Solves fuzzy search issues in note-taking apps with exact URL matching.
+* Supports bulk link uploads and group-based organization.
+* Tech: Next.js, TypeScript, Tailwind CSS.
+3. Event-Driven Microservices API (Mar 2024)
+* Contributed to an online mart API using FastAPI, Docker, Dapr, Kafka.
+* Developed JWT authentication, deployed on Azure Container Apps (ACA).
+* Integrated Kong API Gateway and automated CI/CD with GitHub Actions.
+ACHIEVEMENTS & LEADERSHIP
+* Student of the Quarter | PIAIC (Feb-May 2024)
+   * Attended Cloud Native classes and contributed to CNAI projects at UIT University.
+💡 Hobbies:
+* Active in developer communities and hackathons to stay updated with industry trends.
